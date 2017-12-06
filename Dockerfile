@@ -1,10 +1,10 @@
-FROM ubuntu:14.04.2
+FROM ubuntu:16.04
 
 RUN apt-get update
-RUN apt-get install -y nodejs npm nodejs-legacy
+RUN apt-get install -y nodejs npm
 RUN npm install -g http-server
 
 # Add additional tools
-RUN apt-get install -y nano links
+RUN apt-get install -y nano links git wget curl htop
 
 CMD http-server .
