@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get update
-RUN apt-get install -y nodejs npm
+RUN apt-get install -y nodejs npm nodejs-legacy
 RUN npm install -g http-server
 
 # Add additional tools
